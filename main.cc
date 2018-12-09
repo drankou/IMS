@@ -1,9 +1,16 @@
+/*
+*	Projekt IMS 2018
+*	Sluzby, infrastruktura a energetika (1)
+*	Autori: Aliaksandr Drankou (xdrank00)
+*			Roman Cabala (xcabal06)
+*/
+
 #include "simlib.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <random>
 #include <unistd.h>
- #include <getopt.h>
+#include <getopt.h>
 #include <stdbool.h>
 
 Facility Vykon("Vykon systemu");
