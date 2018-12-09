@@ -1,9 +1,13 @@
+CC = g++
 CLAGS=-g -O2 
 PFLAGS=-lsimlib -lm
- 
-CC = g++
+PROGRAM = project
 
 all: main
 
+run:
+	./$(PROGRAM) > ./result.data
+
 main: main.cc
-	$(CC) $(CFLAGS) -o $@ main.cc $(PFLAGS)
+	$(CC) $(CFLAGS) -o $(PROGRAM) main.cc $(PFLAGS)
+
