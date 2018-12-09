@@ -29,7 +29,7 @@ double price_kWh = 1.90;	//default
 double investment = 280000;	//default
 double solar_panel_output = 305; //default 
 int number_of_panels = 65; 	//default
-int years = 20;
+int years = 25;
 int i = 0;
 int j = 0;
 
