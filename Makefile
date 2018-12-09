@@ -5,9 +5,8 @@ PROGRAM = project
 
 all: main
 
-run:
+run: main
 	./$(PROGRAM) > ./result.data
 
 main: main.cc
 	$(CC) $(CFLAGS) -o $(PROGRAM) main.cc $(PFLAGS)
-

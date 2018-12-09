@@ -134,7 +134,7 @@ int main (int argc, char *argv[]){
 	total_energy = 0;
 	energy_used = 0;
 	good_investment = false;
-	Print("****** Generovani energie ze slunecnich panelu na strese budovy D, FIT VUT ******\n");
+	Print("****** Vyuziti slunecne energii pro budovu D, FIT v Brne ******\n");
 	
 	Init(0, (years * 12) - 1);
 	(new Generator)->Activate();
@@ -145,9 +145,9 @@ int main (int argc, char *argv[]){
 	EnergieProdukovano.Output();
 	Rozdil.Output();
 	printf("\n***** Vysledky simulace za %d let *****\n\n", years);
-	printf("Vyrobeno energie: %g kWh\n", total_energy);
-	printf("Vyuzito energie: %g kWh (%g%%)\n", energy_used, (energy_used/total_energy) * 100);
-	printf("Usetreno: %g kc\n", (price_kWh * total_energy) - investment);
+	printf("Vyrobeno energie: %.0f kWh\n", total_energy);
+	printf("Vyuzito energie: %.0f kWh (%.2f%%)\n", energy_used, (energy_used/total_energy) * 100);
+	printf("Usetreno celkem: %.0f kc\n", (price_kWh * total_energy) - investment);
 	if (month_of_return >= 0){
 		printf("Doba vraceni investice: %d mesicu\n", month_of_return);
 	}else{
